@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  :root{
+    --bg-color: #252b3b;
+    --font-color: #8198af;
+    --bg-back:#020024;
+    --font-hover:#027dba;
+    --font-light:#fefefe;
+    
+  }
+  body {
+    min-height: 100vh; 
+    font-family: sans-serif;
+    background: rgb(0,29,36);
+    background: linear-gradient(11deg, rgba(0,29,36,1) 2%, rgba(18,17,90,1) 33%, rgba(0,190,255,1) 100%);
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background:var(--bg-color);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--font-color);
+    text-align: center;
+  }
+  .container-logo{
+    height:40%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo{
+    height: 200px;
+    width: 250px;
+    border-radius: 0.9rem;
+    margin-bottom: 2rem;
+  
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--font-color);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--font-color);
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--font-color);
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--font-hover);
+    font-size: 1rem;
+  }
+  .submit-btn{
+    /* border: 7px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-box form .btn {
+    position: relative;
+    display: inline-block;
+    /* padding: 10px 20px; */
+    color: var(--font-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 1rem;
+    letter-spacing: 0.3em;
+  }
+  
+  .login-box .btn:hover {
+    background: var(--font-hover);
+    color: var(--font-light);
+    border-radius: 5px;
+  }
+ 

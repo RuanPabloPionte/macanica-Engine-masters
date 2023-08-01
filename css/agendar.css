@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #252b3b;
+  --font-color: #c4dffa;
+  --bg-back: #000002;
+  --font-hover: #027dba;
+  --font-light: #fefefe;
+
+  /* sizing */
+  --lg-font: 2rem;
+  --md-font: 1rem;
+  --sm-font: 0.5rem;
+}
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: var(--bg-back);
+  color: var(--font-color);
+}
+.logo {
+  width: 80px;
+  border-radius: 0.4rem;
+}
+.main-content {
+  min-height: 80vh;
+  min-width: 50vw;
+  background: var(--bg-color);
+  /* border: 4px solid red; */
+  /* overflow: hidden;  */
+  border-radius: 10px;
+}
+
+.modal-perfil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 80%;
+  height: 90%;
+  padding: 1rem;
+  transform: translate(-50%, -50%);
+  background: var(--bg-color);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border: 5px solid var(--font-color);
+  border-radius: 10px;
+  color: var(--font-color);
+  overflow-x: auto;
+}
+
+.email {
+  font-size: var(--md-font);
+}
+
+.modal-perfil .closePerfil {
+  position: absolute;
+  top: 1%;
+  left: 98%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background-color: inherit;
+  color: var(--font-hover);
+  cursor: pointer;
+}
+
+.muilt-container {
+  border-top: 0.1rem solid var(--font-color);
+  border-bottom: 0.1rem solid var(--font-color);
+
+  height: 30vh;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  /* border: 1px solid red; */
+}
+
+.muilt-container-open {
+  height: 50vh;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--font-hover);
+  border-radius: 0.5rem;
+}
+
+.inputFake {
+  width: 1px;
+  height: 1px;
+  border-radius: 1px;
+  background-color: inherit;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.bi-box-arrow-in-right {
+  color: var(--font-color);
+}
+
+.bi-box-arrow-in-left {
+  color: #f60d0d;
+}
+
+.inputHidden {
+  border: 1px solid red;
+}
+
+dialog .form-control {
+  background-color: inherit;
+  color: inherit;
+  border: none !important;
+  border-bottom: 1px solid var(--font-hover) !important;
+  outline: none !important;
+  transition: 0.8s;
+}
+dialog .form-control:focus {
+  background-color: var(--font-color);
+}
+
+.form-control {
+  transition: 0.5s;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: var(--font-color);
+  color: var(--bg-color);
+}
